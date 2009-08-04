@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array/>
+	<key>foldingStartMarker</key>
+	<string>^\s*\b(Cenário|Escenario|MISHUN|Scenarie|Scenarijus|Scenario|Scenariu|Scenariusz|Scénario|Skenario|Stsenaarium|Szenario|Tapaus|Сценарий|سيناريو|シナリオ|场景|예:)</string>
+	<key>foldingStopMarker</key>
+	<string>^\s*$</string>
+	<key>keyEquivalent</key>
+	<string>^~P</string>
+	<key>name</key>
+	<string>Pivotal Tracker</string>
+	<key>scopeName</key>
+	<string>text.cucumber.feature.pivotaltracker</string>
+	<key>uuid</key>
+	<string>1F2489B3-F7A3-44F0-B8BE-0202D2814AFB</string>
+</dict>
+</plist>

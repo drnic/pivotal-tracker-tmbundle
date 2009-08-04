@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>name
+	${1:Name of story}
+description
+	In order to ${2:value}
+	As a ${3:role}
+	I want ${4:feature}
+
+	Acceptance:
+	* ${10:do the thing
+	* don't forget the other thing}
+labels
+	${20:comma,separated,labels}
+===============</string>
+	<key>name</key>
+	<string>Story</string>
+	<key>scope</key>
+	<string>text.cucumber.feature.pivotaltracker</string>
+	<key>tabTrigger</key>
+	<string>story</string>
+	<key>uuid</key>
+	<string>F40C6264-05B2-440A-977F-46933081DA37</string>
+</dict>
+</plist>

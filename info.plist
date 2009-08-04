@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Pivotal Tracker</string>
+	<key>uuid</key>
+	<string>E1C29731-7FF2-4354-88A3-2EBD6C6B6F2B</string>
+</dict>
+</plist>

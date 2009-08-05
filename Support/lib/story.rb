@@ -1,0 +1,106 @@
+# This code comes from Hashrocket's story slurper
+# Les told me I can use it here.
+
+require 'rubygems'
+require 'activeresource'
+
+class Story < ActiveResource::Base
+
+  @@defaults = {} #YAML.load_file('story_defaults.yml')
+  self.site = "http://www.pivotaltracker.com/services/v2/projects/#{@@defaults['project_id']}"
+  headers['X-TrackerToken'] = @@defaults.delete("token")
+  attr_accessor :story_lines
+
+  def self.slurp(document)
+    story_lines = []
+    stories = []
+    document.split(/\n/).each do |line|
+      if line[0,2] != "=="
+        story_lines << line
+      else
+        stories << Story.new.parse(story_lines)
+        story_lines.clear
+      end
+    end
+    stories
+  end
+
+  def initialize(attributes = {})
+    @attributes     = {}
+    @prefix_options = {}
+    load(@@defaults.merge(attributes))
+  end
+
+  def parse(story_lines)
+    @story_lines = story_lines
+    @attributes["name"] = find_name
+    if @attributes["description"] = find_description
+      @attributes["biz_value"] = find_biz_value
+      @attributes["role"] = find_role
+      @attributes["feature"] = find_feature
+    end
+    @attributes["labels"] = find_labels
+    self
+  end
+  
+  private
+
+  def find_name
+    @story_lines.each_with_index do |line, i|
+      return @story_lines[i+1].strip if start_of_attribute?(line, 'name')
+    end
+  end
+
+  def find_description
+    @story_lines.each_with_index do |line, i|
+      if start_of_attribute?(line, 'description')
+        desc = Array.new
+        while((next_line = @story_lines[i+=1]) && starts_with_whitespace?(next_line)) do
+          desc << next_line
+        end
+        return desc.join("\n").gsub("\t", "")
+      end
+    end
+    nil
+  end
+
+  def find_labels
+    @story_lines.each_with_index do |line, i|
+      return @story_lines[i+1].strip if start_of_attribute?(line, 'labels') && @story_lines[i+1]
+    end
+    nil
+  end
+  
+  def find_biz_value
+    if match = @attributes["description"].match(/In order to (.*)$/)
+      match[1]
+    else
+      "..."
+    end
+  end
+  
+  def find_role
+    if match = @attributes["description"].match(/As an? (.*)$/)
+      match[1]
+    else
+      "role"
+    end
+  end
+  
+  def find_feature
+    if match = @attributes["description"].match(/I want (.*)$/)
+      match[1]
+    else
+      "feature"
+    end
+  end
+
+  def starts_with_whitespace?(line)
+    line[0,1] =~ /\s/
+  end
+
+  def start_of_attribute?(line, attribute)
+    line[0,attribute.size] == attribute
+  end
+
+end

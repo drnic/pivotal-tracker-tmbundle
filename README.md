@@ -10,12 +10,14 @@ An intellent story snippet and a command to push/slurp stories to a Pivotal Trac
 
 ## History
 
-The story slurper code (`story.rb`) comes from Hashrocket via Les Hill.
+The story slurper code (`story.rb`) comes from Hashrocket gifted from Les Hill.
 
 ## License
 
 Copyright (c) 2009 Dr Nic Williams, Mocra
+
 Copyright (c) 2009 Hashrocket (lib/story.rb)
+
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
 "Software"), to deal in the Software without restriction, including

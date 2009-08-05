@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
+"${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/lib/story_command.rb"</string>
+	<key>input</key>
+	<string>document</string>
+	<key>name</key>
+	<string>story</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.cucumber.feature.pivotaltracker</string>
+	<key>tabTrigger</key>
+	<string>story</string>
+	<key>uuid</key>
+	<string>1F819144-D007-4A8A-B558-143EE266E177</string>
+</dict>
+</plist>

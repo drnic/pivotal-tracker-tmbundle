@@ -9,15 +9,15 @@ describe StoryCommand do
       name
       	${1:Name of story}
       description
-      	In order to ${2:...}
-      	As a ${3:role}
-      	I want ${4:feature}
+      	In order to ${10:...}
+      	As a ${11:role}
+      	I want ${12:feature}
 
       	Acceptance:
-      	* ${10:do the thing
+      	* ${20:do the thing
       	* don't forget the other thing}
       labels
-      	${20:comma,separated,labels}
+      	${30:comma,separated,labels}
       ===============
       EOS
     end
@@ -27,7 +27,7 @@ describe StoryCommand do
     before(:each) do
       @current_document = <<-EOS.gsub(/^      /, '')
       name
-        First story
+        Admin - Stories - First story
       description
         In order to achieve a goal
         As a specific person
@@ -50,17 +50,17 @@ describe StoryCommand do
       # * ${20:thingy}
       snippet.should == <<-EOS.gsub(/^      /, '')
       name
-      	${1:Name of story}
+      	${1:Admin - Stories - First story}
       description
-      	In order to ${2:achieve a goal}
-      	As a ${3:specific person}
-      	I want ${4:feature}
+      	In order to ${10:achieve a goal}
+      	As a ${11:specific person}
+      	I want ${12:feature}
 
       	Acceptance:
-      	* ${10:do the thing
+      	* ${20:do the thing
       	* don't forget the other thing}
       labels
-      	${20:thingy}
+      	${30:thingy}
       ===============
       EOS
     end

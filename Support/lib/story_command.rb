@@ -37,29 +37,28 @@ class StoryCommand
   end
   
   def default_fields
-    OpenStruct.new({ :biz_value => '...', :role => 'role', :feature => 'feature', :labels => 'comma,separated,labels' })
+    OpenStruct.new({ :name => 'Name of story', :biz_value => '...', :role => 'role', :feature => 'feature', :labels => 'comma,separated,labels' })
   end
   
   def snippet_erb_template
     <<-EOS.gsub(/^    /, '')
     name
-    	${1:Name of story}
+    	${1:<%= name %>}
     description
-    	In order to ${2:<%= biz_value %>}
-    	As a ${3:<%= role %>}
-    	I want ${4:<%= feature %>}
+    	In order to ${10:<%= biz_value %>}
+    	As a ${11:<%= role %>}
+    	I want ${12:<%= feature %>}
 
     	Acceptance:
-    	* ${10:do the thing
+    	* ${20:do the thing
     	* don't forget the other thing}
     labels
-    	${20:<%= labels %>}
+    	${30:<%= labels %>}
     ===============
     EOS
   end
 end
 
 if $0 == __FILE__
-  
   print StoryCommand.new(STDIN.read).render_snippet
 end

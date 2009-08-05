@@ -1,18 +1,18 @@
-= TextMate bundle for Pivotal Tracker
+# TextMate bundle for Pivotal Tracker
 
 An intellent story snippet and a command to push/slurp stories to a Pivotal Tracker account.
 
-== Installation
+## Installation
 
     cd ~/Library/Application\ Support/TextMate/Bundles/
     git clone git://github.com/drnic/pivotal-tracker-tmbundle.git "Pivotal Tracker.tmbundle"
     osascript -e 'tell app "TextMate" to reload bundles'
 
-== History
+## History
 
 The story slurper code (`story.rb`) comes from Hashrocket via Les Hill.
 
-== License
+## License
 
 Copyright (c) 2009 Dr Nic Williams, Mocra
 Copyright (c) 2009 Hashrocket (lib/story.rb)

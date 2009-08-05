@@ -12,6 +12,31 @@
 	<string>^~P</string>
 	<key>name</key>
 	<string>Pivotal Tracker</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>text.cucumber.feature</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^(name|description|labels|label)\b</string>
+			<key>name</key>
+			<string>keyword.other.header.pivotaltracker</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^(==+)</string>
+			<key>name</key>
+			<string>comment.other.section.pivotaltracker</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Acceptance:)\b</string>
+			<key>name</key>
+			<string>meta.section.acceptance</string>
+		</dict>
+	</array>
 	<key>scopeName</key>
 	<string>text.cucumber.feature.pivotaltracker</string>
 	<key>uuid</key>

@@ -1,6 +1,11 @@
 require "erb"
 require "ostruct"
-require "active_support"
+begin
+  require "active_support"
+rescue LoadError => e
+  require "rubygems"
+  require "active_support"
+end
 require "story"
 class StoryCommand
   attr_reader :document, :stories

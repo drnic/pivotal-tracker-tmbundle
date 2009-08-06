@@ -45,7 +45,7 @@ class StoryCommand
   end
   
   def default_fields
-    OpenStruct.new({ :name => @default_story_name, :biz_value => '...', :role => 'role', :feature => 'feature', :labels => @default_label })
+    OpenStruct.new({ :name => @default_story_name, :labels => @default_label, :biz_value => '...', :role => 'role' })
   end
   
   def snippet_erb_template

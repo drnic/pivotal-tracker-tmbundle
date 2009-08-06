@@ -71,7 +71,7 @@ describe StoryCommand do
       # * ${20:thingy}
       snippet.should == <<-EOS.gsub(/^      /, '')
       name
-      	${1:Admin - Stories - First story}
+      	${1:Admin - ${2:Stories - ${3:First story}}}
       description
       	In order to ${10:achieve a goal}
       	As a ${11:specific person}

@@ -45,13 +45,13 @@ class StoryCommand
   end
   
   def default_fields
-    OpenStruct.new({ :name => @default_story_name, :labels => @default_label, :biz_value => '...', :role => 'role' })
+    OpenStruct.new({ :name_snippet => "${1:#{@default_story_name}}", :labels => @default_label, :biz_value => '...', :role => 'role' })
   end
   
   def snippet_erb_template
     <<-EOS.gsub(/^    /, '')
     name
-    	${1:<%= name %>}
+    	<%= name_snippet %>
     description
     	In order to ${10:<%= biz_value %>}
     	As a ${11:<%= role %>}

@@ -43,6 +43,23 @@ class Story < ActiveResource::Base
     self
   end
   
+  # "name"                  => "${1:name}"
+  # "name1 - name2"         => "${1:name1 - ${2:name2}"
+  # "name1 - name2 - name3" => "${1:name1 - ${2:name2 - ${3:name3}}"
+  def name_snippet
+    name_bits = name.split(/ - /)
+    count = name_bits.size
+    name_bits.reverse.inject("") do |bits, name_chunk|
+      if bits.blank? 
+        bits = "${#{count}:#{name_chunk}}"
+      else
+        bits = "${#{count}:#{name_chunk} - #{bits}}"
+      end
+      count -= 1
+      bits
+    end
+  end
+  
   private
 
   def find_name

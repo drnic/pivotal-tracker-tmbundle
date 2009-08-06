@@ -5,11 +5,15 @@ require "story"
 class StoryCommand
   attr_reader :document, :stories
   
-  def initialize(document = "")
-    # @file_name          = file_name
-    # @default_label      = file_name.split(".").first
-    # @default_story_name = @default_label.humanize
-    @document           = document
+  def initialize(file_name, document = "")
+    if @file_name         = file_name
+      @default_label      = file_name.split(".").first
+      @default_story_name = @default_label.humanize
+    else
+      @default_label      = 'comma,separated,labels'
+      @default_story_name = 'Name of story'
+    end
+    @document = document
   end
   
   def render_snippet
@@ -41,7 +45,7 @@ class StoryCommand
   end
   
   def default_fields
-    OpenStruct.new({ :name => 'Name of story', :biz_value => '...', :role => 'role', :feature => 'feature', :labels => 'comma,separated,labels' })
+    OpenStruct.new({ :name => @default_story_name, :biz_value => '...', :role => 'role', :feature => 'feature', :labels => @default_label })
   end
   
   def snippet_erb_template
@@ -51,7 +55,7 @@ class StoryCommand
     description
     	In order to ${10:<%= biz_value %>}
     	As a ${11:<%= role %>}
-    	I want ${1/.*-\s(.*)$/to \\l$1/}
+    	I want ${12:${1/.*-\s(.*)$/to \\l$1/}}
 
     	Acceptance:
     	* ${20:do the thing
@@ -64,5 +68,5 @@ class StoryCommand
 end
 
 if $0 == __FILE__
-  print StoryCommand.new(STDIN.read).render_snippet
+  print StoryCommand.new(ENV['TM_FILENAME'], STDIN.read).render_snippet
 end

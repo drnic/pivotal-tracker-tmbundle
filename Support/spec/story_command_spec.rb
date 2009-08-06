@@ -11,7 +11,7 @@ describe StoryCommand do
       description
       	In order to ${10:...}
       	As a ${11:role}
-      	I want ${1/.*-\s(.*)$/to \\l$1/}
+      	I want ${12:${1/.*-\s(.*)$/to \\l$1/}}
 
       	Acceptance:
       	* ${20:do the thing
@@ -32,7 +32,7 @@ describe StoryCommand do
       description
       	In order to ${10:...}
       	As a ${11:role}
-      	I want ${1/.*-\s(.*)$/to \\l$1/}
+      	I want ${12:${1/.*-\s(.*)$/to \\l$1/}}
 
       	Acceptance:
       	* ${20:do the thing
@@ -75,7 +75,7 @@ describe StoryCommand do
       description
       	In order to ${10:achieve a goal}
       	As a ${11:specific person}
-      	I want ${1/.*-\s(.*)$/to \\l$1/}
+      	I want ${12:${1/.*-\s(.*)$/to \\l$1/}}
 
       	Acceptance:
       	* ${20:do the thing

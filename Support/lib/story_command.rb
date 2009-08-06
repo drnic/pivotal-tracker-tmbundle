@@ -1,11 +1,15 @@
 require "erb"
 require "ostruct"
+require "active_support"
 require "story"
 class StoryCommand
   attr_reader :document, :stories
   
   def initialize(document = "")
-    @document = document
+    # @file_name          = file_name
+    # @default_label      = file_name.split(".").first
+    # @default_story_name = @default_label.humanize
+    @document           = document
   end
   
   def render_snippet
@@ -47,7 +51,7 @@ class StoryCommand
     description
     	In order to ${10:<%= biz_value %>}
     	As a ${11:<%= role %>}
-    	I want ${12:<%= feature %>}
+    	I want ${1/.*-\s(.*)$/to \\l$1/}
 
     	Acceptance:
     	* ${20:do the thing

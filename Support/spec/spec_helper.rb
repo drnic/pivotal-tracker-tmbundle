@@ -1,4 +1,4 @@
 require "spec"
-require "activeresource/http_mock"
+# require "active_resource/http_mock"
 
 $:.unshift(File.expand_path(File.dirname(__FILE__) + "/../lib"))

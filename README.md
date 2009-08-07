@@ -5,7 +5,9 @@ An intellent story snippet and a command to push/slurp stories to a Pivotal Trac
 ## Installation
 
     cd ~/Library/Application\ Support/TextMate/Bundles/
-    git clone git://github.com/drnic/pivotal-tracker-tmbundle.git "Pivotal Tracker.tmbundle"
+    git clone git://github.com/drnic/pivotal-tracker-tmbundle.git Pivotal\ Tracker.tmbundle
+    cd Pivotal\ Tracker.tmbundle
+    git submodule update --init
     osascript -e 'tell app "TextMate" to reload bundles'
 
 ## History

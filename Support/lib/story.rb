@@ -1,13 +1,20 @@
 # This code comes from Hashrocket's story slurper
 # Les told me I can use it here.
 
-require 'rubygems'
-require 'activeresource'
+# ruby19 needs latest patches for use_ssl? 
+# but let's use all its awesomeness anyway
+$:.unshift(File.dirname(__FILE__) + "/../vendor/rails/activeresource/lib")
+$:.unshift(File.dirname(__FILE__) + "/../vendor/rails/activesupport/lib")
+begin
+  require 'activeresource'
+rescue LoadError => e
+  raise "You need to pull down Support/vendor/rails"
+end
 
 class Story < ActiveResource::Base
 
   @@defaults = {} #YAML.load_file('story_defaults.yml')
-  self.site = "http://www.pivotaltracker.com/services/v2/projects/#{@@defaults['project_id']}"
+  self.site = "http://www.pivotaltracker.com/services/v2/projects/123456"
   headers['X-TrackerToken'] = @@defaults.delete("token")
   attr_accessor :story_lines
 

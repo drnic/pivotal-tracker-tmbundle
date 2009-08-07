@@ -1,4 +1,7 @@
 require "spec"
-# require "active_resource/http_mock"
+
+# require "rubygems"
+# require "fakeweb"
+# FakeWeb.allow_net_connect = false
 
 $:.unshift(File.expand_path(File.dirname(__FILE__) + "/../lib"))

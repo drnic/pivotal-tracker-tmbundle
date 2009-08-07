@@ -1,5 +1,5 @@
 require File.dirname(__FILE__) + "/spec_helper"
-require 'story_command'
+require 'save_and_slurp_command'
 require "active_resource/http_mock"
 
 describe Story do
@@ -23,12 +23,11 @@ describe Story do
         # mock.put    "/people/1.xml", {}, nil, 204
         # mock.delete "/people/1.xml", {}, nil, 200
       end
-      
-      # ActiveResource::HttpMock.respond_to do |mock|
-      #   mock.post "/services/v2/projects/123456/stories", {}, @story, 201, "Location" => "/services/v2/projects/123456/stories/789.xml"
-      # end
-      @story.save
+      command = SaveAndSlurpCommand.new("some_file.stories", current_document)
+      command.save
+      command.tooltip_output.should == "1 created. 0 updated."
     end
+    
     it "should update with PT any existing stories by their name" do
       pending
     end

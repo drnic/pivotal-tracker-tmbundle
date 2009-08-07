@@ -7,6 +7,8 @@ $:.unshift(File.dirname(__FILE__) + "/../vendor/rails/activeresource/lib")
 $:.unshift(File.dirname(__FILE__) + "/../vendor/rails/activesupport/lib")
 begin
   require 'activeresource'
+  require "active_support/core_ext/string/inflections"
+  require "active_support/core_ext/hash/conversions"
 rescue LoadError => e
   raise "You need to pull down Support/vendor/rails"
 end

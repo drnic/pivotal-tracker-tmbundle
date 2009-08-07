@@ -1,10 +1,10 @@
 require File.dirname(__FILE__) + "/spec_helper"
-require 'story_command'
+require 'story_parser'
 
-describe StoryCommand do
+describe StoryParser do
   describe "initial story in saved file" do
     it "should return default story snippet" do
-      snippet = StoryCommand.new("some_story.stories").render_snippet
+      snippet = StoryParser.new("some_story.stories").render_snippet
       snippet.should == <<-EOS.gsub(/^      /, '')
       name
       	${1:Some story}
@@ -25,7 +25,7 @@ describe StoryCommand do
   
   describe "initial story in unnamed file" do
     it "should return default story snippet" do
-      snippet = StoryCommand.new(nil).render_snippet
+      snippet = StoryParser.new(nil).render_snippet
       snippet.should == <<-EOS.gsub(/^      /, '')
       name
       	${1:Name of story}
@@ -64,7 +64,7 @@ describe StoryCommand do
       EOS
     end
     it "should return intelligent story snippet" do
-      snippet = StoryCommand.new("some_story.stories", @current_document).render_snippet
+      snippet = StoryParser.new("some_story.stories", @current_document).render_snippet
       # should default from previous story the fields:
       # * ${2:to achieve a goal}
       # * ${3:specific person}

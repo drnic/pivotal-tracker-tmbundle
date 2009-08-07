@@ -1,10 +1,8 @@
 require "erb"
 require "ostruct"
 require "story"
-require "active_support/core_ext/string/inflections"
-require "active_support/core_ext/hash/conversions"
 
-class StoryCommand
+class StoryParser
   attr_reader :document, :stories
   
   def initialize(file_name, document = "")
@@ -70,5 +68,5 @@ class StoryCommand
 end
 
 if $0 == __FILE__
-  print StoryCommand.new(ENV['TM_FILENAME'], STDIN.read).render_snippet
+  print StoryParser.new(ENV['TM_FILENAME'], STDIN.read).render_snippet
 end

@@ -1,0 +1,459 @@
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;font-variant:normal;}sup {vertical-align:text-top;}sub {vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}legend{color:#000;}body {font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+body{text-align:center;}#ft{clear:both;}#doc,#doc2,#doc3,#doc4,.yui-t1,.yui-t2,.yui-t3,.yui-t4,.yui-t5,.yui-t6,.yui-t7{margin:auto;text-align:left;width:57.69em;*width:56.301em;min-width:750px;}#doc2{width:73.074em;*width:71.313em;}#doc3{margin:auto 10px;width:auto;}#doc4{width:74.923em;*width:73.117em;}.yui-b{position:relative;}.yui-b{_position:static;}#yui-main .yui-b{position:static;}#yui-main{width:100%;}.yui-t1 #yui-main,.yui-t2 #yui-main,.yui-t3 #yui-main{float:right;margin-left:-25em;}.yui-t4 #yui-main,.yui-t5 #yui-main,.yui-t6 #yui-main{float:left;margin-right:-25em;}.yui-t1 .yui-b{float:left;width:12.3207em;*width:12.0106em;}.yui-t1 #yui-main .yui-b{margin-left:13.3207em;*margin-left:13.0106em;}.yui-t2 .yui-b{float:left;width:13.8456em;*width:13.512em;}.yui-t2 #yui-main .yui-b{margin-left:14.8456em;*margin-left:14.512em;}.yui-t3 .yui-b{float:left;width:23.0759em;*width:22.52em;}.yui-t3 #yui-main .yui-b{margin-left:24.0759em;*margin-left:23.52em;}.yui-t4 .yui-b{float:right;width:13.8456em;*width:13.512em;}.yui-t4 #yui-main .yui-b{margin-right:14.8456em;*margin-right:14.512em;}.yui-t5 .yui-b{float:right;width:18.4608em;*width:18.016em;}.yui-t5 #yui-main .yui-b{margin-right:19.4608em;*margin-right:19.016em;}.yui-t6 .yui-b{float:right;width:23.0759em;*width:22.52em;}.yui-t6 #yui-main .yui-b{margin-right:24.0759em;*margin-right:23.52em;}.yui-t7 #yui-main .yui-b{display:block;margin:0 0 1em 0;}#yui-main .yui-b{float:none;width:auto;}.yui-g .yui-gb .yui-u,.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-gc,.yui-gb .yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gb .yui-u,.yui-gc .yui-u,.yui-gc .yui-g,.yui-gd .yui-u{float:left;margin-left:2%;width:32%;}.yui-gb .yui-gb .yui-u,.yui-gb .yui-gc .yui-u{*margin-left:1.8%;_margin-left:4%;}.yui-g .yui-gb .yui-u{_margin-left:.8%;}.yui-gb .yui-u{float:right;}.yui-gb div.first{margin-left:0;float:left;}.yui-g .yui-gb div.first,.yui-gb .yui-gb div.first{*margin-right:0;*width:32%;_width:31.7%;}.yui-gb .yui-gc div.first,.yui-gb .yui-gd div.first{*margin-right:0;}.yui-gb .yui-gd .yui-u{*width:66%;_width:61.2%;}.yui-gb .yui-gd div.first{*width:31%;_width:29.5%;}.yui-g .yui-gc .yui-u,.yui-gb .yui-gc .yui-u{width:32%;_float:right;margin-right:0;_margin-left:0;}.yui-gb .yui-gc div.first{width:66%;*float:left;*margin-left:0;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf .yui-u{margin:0;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf,.yui-gc .yui-u,.yui-gd .yui-g,.yui-g .yui-gc .yui-u,.yui-ge .yui-u,.yui-ge .yui-g,.yui-gf .yui-g,.yui-gf .yui-u{float:right;}.yui-g .yui-gc div.first,.yui-g .yui-ge div.first,.yui-g div.first,.yui-gc div.first,.yui-gc div.first div.first,.yui-gd div.first,.yui-ge div.first,.yui-gf div.first{float:left;}.yui-g .yui-g .yui-u,.yui-gb .yui-g .yui-u,.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u,.yui-ge .yui-g .yui-u,.yui-gf .yui-g .yui-u{width:49%;*width:48.1%;*margin-left:0;}.yui-g .yui-g div.first{*margin:0;}.yui-gb .yui-g div.first{*margin-right:4%;_margin-right:1.3%;}.yui-gb .yui-gb .yui-u{_margin-left:.7%;}.yui-gb .yui-g div.first,.yui-gb .yui-gb div.first{*margin-left:0;}.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u{*width:48.1%;*margin-left:0;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf{width:49.1%;}.yui-g .yui-gb div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first{margin-left:0;}.yui-g .yui-gc div.first,.yui-gc div.first,.yui-gd .yui-g,.yui-gd .yui-u{width:66%;}.yui-gd div.first,.yui-gb .yui-gd div.first{width:32%;}.yui-g .yui-gd div.first{_width:29.9%;}.yui-ge .yui-u,.yui-ge .yui-g,.yui-gf div.first{width:24%;}.yui-gb .yui-ge div.yui-u,.yui-gb .yui-gf div.yui-u{float:right;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf div.first {float:left;}.yui-ge div.first,.yui-gf .yui-g,.yui-gf .yui-u{width:74.2%;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf div.first{*width:24%;_width:20%;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf .yui-u{*width:73.5%;_width:65.5%;}#bd:after,.yui-g:after,.yui-gb:after,.yui-gc:after,.yui-gd:after,.yui-ge:after,.yui-gf:after{content:".";display:block;height:0;clear:both;visibility:hidden;}#bd,.yui-g,.yui-gb,.yui-gc,.yui-gd,.yui-ge,.yui-gf{zoom:1;}.yui-gb .yui-u{float:left;}
+.yuimenubar{visibility:visible;position:static;}.yuimenu .yuimenu,.yuimenubar .yuimenu{visibility:hidden;position:absolute;top:-10000px;left:-10000px;}.yuimenubar li,.yuimenu li{list-style-type:none;}.yuimenubar ul,.yuimenu ul,.yuimenubar li,.yuimenu li,.yuimenu h6,.yuimenubar h6{margin:0;padding:0;}.yuimenuitemlabel,.yuimenubaritemlabel{text-align:left;white-space:nowrap;}.yuimenubar ul{*zoom:1;}.yuimenubar .yuimenu ul{*zoom:normal;}.yuimenubar>.bd>ul:after{content:".";display:block;clear:both;visibility:hidden;height:0;line-height:0;}.yuimenubaritem{float:left;}.yuimenubaritemlabel,.yuimenuitemlabel{display:block;}.yuimenuitemlabel .helptext{font-style:normal;display:block;margin:-1em 0 0 10em;}.yui-menu-shadow{position:absolute;visibility:hidden;z-index:-1;}.yui-skin-sam .yui-menu-shadow-visible{top:2px;right:-3px;left:-3px;bottom:-3px;visibility:visible;}.hide-scrollbars *{overflow:hidden;}.hide-scrollbars select{display:none;}.yuimenu.show-scrollbars,.yuimenubar.show-scrollbars{overflow:visible;}.yuimenu.hide-scrollbars .yui-menu-shadow,.yuimenubar.hide-scrollbars .yui-menu-shadow{overflow:hidden;}.yuimenu.show-scrollbars .yui-menu-shadow,.yuimenubar.show-scrollbars .yui-menu-shadow{overflow:auto;}.yui-skin-sam .yuimenubar{font-size:93%;line-height:2;*line-height:1.9;border:solid 1px #808080;background:url(../../../../assets/skins/sam/sprite.png) repeat-x 0 0;}.yui-skin-sam .yuimenubarnav .yuimenubaritem{border-right:solid 1px #ccc;}.yui-skin-sam .yuimenubaritemlabel{padding:0 10px;color:#000;text-decoration:none;cursor:default;border-style:solid;border-color:#808080;border-width:1px 0;*position:relative;margin:-1px 0;}.yui-skin-sam .yuimenubarnav .yuimenubaritemlabel{padding-right:20px;*display:inline-block;}.yui-skin-sam .yuimenubarnav .yuimenubaritemlabel-hassubmenu{background:url(menubaritem_submenuindicator.png) right center no-repeat;}.yui-skin-sam .yuimenubaritem-selected{background:url(../../../../assets/skins/sam/sprite.png) repeat-x 0 -1700px;}.yui-skin-sam .yuimenubaritemlabel-selected{border-color:#7D98B8;}.yui-skin-sam .yuimenubarnav .yuimenubaritemlabel-selected{border-left-width:1px;margin-left:-1px;*left:-1px;}.yui-skin-sam .yuimenubaritemlabel-disabled{cursor:default;color:#A6A6A6;}.yui-skin-sam .yuimenubarnav .yuimenubaritemlabel-hassubmenu-disabled{background-image:url(menubaritem_submenuindicator_disabled.png);}.yui-skin-sam .yuimenu{font-size:93%;line-height:1.5;*line-height:1.45;}.yui-skin-sam .yuimenubar .yuimenu,.yui-skin-sam .yuimenu .yuimenu{font-size:100%;}.yui-skin-sam .yuimenu .bd{border:solid 1px #808080;background-color:#fff;}.yui-skin-sam .yuimenu ul{padding:3px 0;border-width:1px 0 0 0;border-color:#ccc;border-style:solid;}.yui-skin-sam .yuimenu ul.first-of-type{border-width:0;}.yui-skin-sam .yuimenu h6{font-weight:bold;border-style:solid;border-color:#ccc;border-width:1px 0 0 0;color:#a4a4a4;padding:3px 10px 0 10px;}.yui-skin-sam .yuimenu ul.hastitle,.yui-skin-sam .yuimenu h6.first-of-type{border-width:0;}.yui-skin-sam .yuimenu .yui-menu-body-scrolled{border-color:#ccc #808080;overflow:hidden;}.yui-skin-sam .yuimenu .topscrollbar,.yui-skin-sam .yuimenu .bottomscrollbar{height:16px;border:solid 1px #808080;background:#fff url(../../../../assets/skins/sam/sprite.png) no-repeat 0 0;}.yui-skin-sam .yuimenu .topscrollbar{border-bottom-width:0;background-position:center -950px;}.yui-skin-sam .yuimenu .topscrollbar_disabled{background-position:center -975px;}.yui-skin-sam .yuimenu .bottomscrollbar{border-top-width:0;background-position:center -850px;}.yui-skin-sam .yuimenu .bottomscrollbar_disabled{background-position:center -875px;}.yui-skin-sam .yuimenuitem{_border-bottom:solid 1px #fff;}.yui-skin-sam .yuimenuitemlabel{padding:0 20px;color:#000;text-decoration:none;cursor:default;}.yui-skin-sam .yuimenuitemlabel .helptext{margin-top:-1.5em;*margin-top:-1.45em;}.yui-skin-sam .yuimenuitem-hassubmenu{background-image:url(menuitem_submenuindicator.png);background-position:right center;background-repeat:no-repeat;}.yui-skin-sam .yuimenuitem-checked{background-image:url(menuitem_checkbox.png);background-position:left center;background-repeat:no-repeat;}.yui-skin-sam .yui-menu-shadow-visible{background-color:#000;opacity:.12;*filter:alpha(opacity=12);}.yui-skin-sam .yuimenuitem-selected{background-color:#B3D4FF;}.yui-skin-sam .yuimenuitemlabel-disabled{cursor:default;color:#A6A6A6;}.yui-skin-sam .yuimenuitem-hassubmenu-disabled{background-image:url(menuitem_submenuindicator_disabled.png);}.yui-skin-sam .yuimenuitem-checked-disabled{background-image:url(menuitem_checkbox_disabled.png);}
+.yui-button{display:-moz-inline-box;display:inline-block;vertical-align:text-bottom;}.yui-button .first-child{display:block;*display:inline-block;}.yui-button button,.yui-button a{display:block;*display:inline-block;border:none;margin:0;}.yui-button button{background-color:transparent;*overflow:visible;cursor:pointer;}.yui-button a{text-decoration:none;}.yui-skin-sam .yui-button{border-width:1px 0;border-style:solid;border-color:#808080;background:url(../../../../assets/skins/sam/sprite.png) repeat-x 0 0;margin:auto .25em;}.yui-skin-sam .yui-button .first-child{border-width:0 1px;border-style:solid;border-color:#808080;margin:0 -1px;*position:relative;*left:-1px;}.yui-skin-sam .yui-button button,.yui-skin-sam .yui-button a{padding:0 10px;font-size:93%;line-height:2;*line-height:1.7;min-height:2em;*min-height:auto;color:#000;}.yui-skin-sam .yui-button a{*line-height:2;}.yui-skin-sam .yui-split-button button,.yui-skin-sam .yui-menu-button button{padding-right:20px;background-position:right center;background-repeat:no-repeat;}.yui-skin-sam .yui-menu-button button{background-image:url(menu-button-arrow.png);}.yui-skin-sam .yui-split-button button{background-image:url(split-button-arrow.png);}.yui-skin-sam .yui-button-focus{border-color:#7D98B8;background-position:0 -1300px;}.yui-skin-sam .yui-button-focus .first-child{border-color:#7D98B8;}.yui-skin-sam .yui-button-focus button,.yui-skin-sam .yui-button-focus a{color:#000;}.yui-skin-sam .yui-split-button-focus button{background-image:url(split-button-arrow-focus.png);}.yui-skin-sam .yui-button-hover{border-color:#7D98B8;background-position:0 -1300px;}.yui-skin-sam .yui-button-hover .first-child{border-color:#7D98B8;}.yui-skin-sam .yui-button-hover button,.yui-skin-sam .yui-button-hover a{color:#000;}.yui-skin-sam .yui-split-button-hover button{background-image:url(split-button-arrow-hover.png);}.yui-skin-sam .yui-button-active{border-color:#7D98B8;background-position:0 -1700px;}.yui-skin-sam .yui-button-active .first-child{border-color:#7D98B8;}.yui-skin-sam .yui-button-active button,.yui-skin-sam .yui-button-active a{color:#000;}.yui-skin-sam .yui-split-button-activeoption{border-color:#808080;background-position:0 0;}.yui-skin-sam .yui-split-button-activeoption .first-child{border-color:#808080;}.yui-skin-sam .yui-split-button-activeoption button{background-image:url(split-button-arrow-active.png);}.yui-skin-sam .yui-radio-button-checked,.yui-skin-sam .yui-checkbox-button-checked{border-color:#304369;background-position:0 -1400px;}.yui-skin-sam .yui-radio-button-checked .first-child,.yui-skin-sam .yui-checkbox-button-checked .first-child{border-color:#304369;}.yui-skin-sam .yui-radio-button-checked button,.yui-skin-sam .yui-checkbox-button-checked button{color:#fff;}.yui-skin-sam .yui-button-disabled{border-color:#ccc;background-position:0 -1500px;}.yui-skin-sam .yui-button-disabled .first-child{border-color:#ccc;}.yui-skin-sam .yui-button-disabled button,.yui-skin-sam .yui-button-disabled a{color:#A6A6A6;cursor:default;}.yui-skin-sam .yui-menu-button-disabled button{background-image:url(menu-button-arrow-disabled.png);}.yui-skin-sam .yui-split-button-disabled button{background-image:url(split-button-arrow-disabled.png);}
+li.spacer {border-bottom: 1px solid; margin-top: 0.4em; margin-bottom: 0.4em}
+.yuimenu li {padding: 0 15px; font-weight: bold; color: #999}
+.yuimenu li.disabled_menu_item {padding-left: 25px}
+.yuimenu li.disabled_menu_item a {color: #999999; margin-left: -10px}
+#header a.yuimenuitemlabel, .yuimenu a.yuimenuitemlabel {color:#336; padding:0 10px}
+.yui-skin-sam .yui-menu-shadow-visible {left: 2px}
+.yui-skin-sam .yuimenuitem-checked {background-image: url("/javascripts/third-party/yui-2.4.0/menu/assets/skins/sam/menuitem_checkbox.png")}
+.yui-skin-sam a.yuimenuitemlabel {cursor:pointer}
+.subnav + .content_section, .subnav + h2 {margin-top: 35px}
+.subnav {margin-bottom: 50px}
+.controls {font-size: 0.94em}
+.subnav li, .controls li{ float:left; margin: 0 1px 0 0; padding:0; vertical-align: middle}
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;font-variant:normal;}sup {vertical-align:text-top;}sub {vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}legend{color:#000;}body {font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+body{text-align:center;}#ft{clear:both;}#doc,#doc2,#doc3,#doc4,.yui-t1,.yui-t2,.yui-t3,.yui-t4,.yui-t5,.yui-t6,.yui-t7{margin:auto;text-align:left;width:57.69em;*width:56.301em;min-width:750px;}#doc2{width:73.074em;*width:71.313em;}#doc3{margin:auto 10px;width:auto;}#doc4{width:74.923em;*width:73.117em;}.yui-b{position:relative;}.yui-b{_position:static;}#yui-main .yui-b{position:static;}#yui-main{width:100%;}.yui-t1 #yui-main,.yui-t2 #yui-main,.yui-t3 #yui-main{float:right;margin-left:-25em;}.yui-t4 #yui-main,.yui-t5 #yui-main,.yui-t6 #yui-main{float:left;margin-right:-25em;}.yui-t1 .yui-b{float:left;width:12.3207em;*width:12.0106em;}.yui-t1 #yui-main .yui-b{margin-left:13.3207em;*margin-left:13.0106em;}.yui-t2 .yui-b{float:left;width:13.8456em;*width:13.512em;}.yui-t2 #yui-main .yui-b{margin-left:14.8456em;*margin-left:14.512em;}.yui-t3 .yui-b{float:left;width:23.0759em;*width:22.52em;}.yui-t3 #yui-main .yui-b{margin-left:24.0759em;*margin-left:23.52em;}.yui-t4 .yui-b{float:right;width:13.8456em;*width:13.512em;}.yui-t4 #yui-main .yui-b{margin-right:14.8456em;*margin-right:14.512em;}.yui-t5 .yui-b{float:right;width:18.4608em;*width:18.016em;}.yui-t5 #yui-main .yui-b{margin-right:19.4608em;*margin-right:19.016em;}.yui-t6 .yui-b{float:right;width:23.0759em;*width:22.52em;}.yui-t6 #yui-main .yui-b{margin-right:24.0759em;*margin-right:23.52em;}.yui-t7 #yui-main .yui-b{display:block;margin:0 0 1em 0;}#yui-main .yui-b{float:none;width:auto;}.yui-g .yui-gb .yui-u,.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-gc,.yui-gb .yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gb .yui-u,.yui-gc .yui-u,.yui-gc .yui-g,.yui-gd .yui-u{float:left;margin-left:2%;width:32%;}.yui-gb .yui-gb .yui-u,.yui-gb .yui-gc .yui-u{*margin-left:1.8%;_margin-left:4%;}.yui-g .yui-gb .yui-u{_margin-left:.8%;}.yui-gb .yui-u{float:right;}.yui-gb div.first{margin-left:0;float:left;}.yui-g .yui-gb div.first,.yui-gb .yui-gb div.first{*margin-right:0;*width:32%;_width:31.7%;}.yui-gb .yui-gc div.first,.yui-gb .yui-gd div.first{*margin-right:0;}.yui-gb .yui-gd .yui-u{*width:66%;_width:61.2%;}.yui-gb .yui-gd div.first{*width:31%;_width:29.5%;}.yui-g .yui-gc .yui-u,.yui-gb .yui-gc .yui-u{width:32%;_float:right;margin-right:0;_margin-left:0;}.yui-gb .yui-gc div.first{width:66%;*float:left;*margin-left:0;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf .yui-u{margin:0;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf,.yui-gc .yui-u,.yui-gd .yui-g,.yui-g .yui-gc .yui-u,.yui-ge .yui-u,.yui-ge .yui-g,.yui-gf .yui-g,.yui-gf .yui-u{float:right;}.yui-g .yui-gc div.first,.yui-g .yui-ge div.first,.yui-g div.first,.yui-gc div.first,.yui-gc div.first div.first,.yui-gd div.first,.yui-ge div.first,.yui-gf div.first{float:left;}.yui-g .yui-g .yui-u,.yui-gb .yui-g .yui-u,.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u,.yui-ge .yui-g .yui-u,.yui-gf .yui-g .yui-u{width:49%;*width:48.1%;*margin-left:0;}.yui-g .yui-g div.first{*margin:0;}.yui-gb .yui-g div.first{*margin-right:4%;_margin-right:1.3%;}.yui-gb .yui-gb .yui-u{_margin-left:.7%;}.yui-gb .yui-g div.first,.yui-gb .yui-gb div.first{*margin-left:0;}.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u{*width:48.1%;*margin-left:0;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf{width:49.1%;}.yui-g .yui-gb div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first{margin-left:0;}.yui-g .yui-gc div.first,.yui-gc div.first,.yui-gd .yui-g,.yui-gd .yui-u{width:66%;}.yui-gd div.first,.yui-gb .yui-gd div.first{width:32%;}.yui-g .yui-gd div.first{_width:29.9%;}.yui-ge .yui-u,.yui-ge .yui-g,.yui-gf div.first{width:24%;}.yui-gb .yui-ge div.yui-u,.yui-gb .yui-gf div.yui-u{float:right;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf div.first {float:left;}.yui-ge div.first,.yui-gf .yui-g,.yui-gf .yui-u{width:74.2%;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf div.first{*width:24%;_width:20%;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf .yui-u{*width:73.5%;_width:65.5%;}#bd:after,.yui-g:after,.yui-gb:after,.yui-gc:after,.yui-gd:after,.yui-ge:after,.yui-gf:after{content:".";display:block;height:0;clear:both;visibility:hidden;}#bd,.yui-g,.yui-gb,.yui-gc,.yui-gd,.yui-ge,.yui-gf{zoom:1;}.yui-gb .yui-u{float:left;}
+.yui-calcontainer {position:relative; padding:5px; background-color:#F7F9FB; border:1px solid #7B9EBD; float:left; _overflow:hidden}
+.yui-calcontainer iframe {position:absolute; border:none; margin:0;padding:0; z-index:0; width:100%; height:100%; left:0px; top:0px}
+.yui-calcontainer iframe.fixedsize {width:50em; height:50em; top:-1px; left:-1px}
+.yui-calcontainer.multi {padding:0}
+.yui-calcontainer.multi .groupcal {padding:5px; background-color:transparent; z-index:1; float:left; position:relative; border:none}
+.yui-calcontainer .title {font:100% sans-serif; color:#000; font-weight:bold; margin-bottom:5px; height:25px; position:absolute; top:3px;left:5px; z-index:1}
+.yui-calcontainer .close-icon {position:absolute; right:3px; top:3px; border:none; z-index:1}
+.yui-calcontainer .calclose {background: url("calx.gif") no-repeat; width:17px; height:13px; cursor:pointer}
+.yui-calendar {font:100% sans-serif; text-align:center; border-spacing:0; border-collapse:separate; position:relative}
+.yui-calcontainer.withtitle {padding-top:1.5em}
+.yui-calendar .calnavleft {position:absolute; cursor:pointer; top:2px; bottom:0; width:9px; height:12px; left:2px; z-index:1; background: url("callt.gif") no-repeat}
+.yui-calendar .calnavright {position:absolute; cursor:pointer; top:2px; bottom:0; width:9px; height:12px; right:2px; z-index:1; background: url("calrt.gif") no-repeat}
+.yui-calendar td.calcell {padding:.1em .2em; border:1px solid #E0E0E0; text-align:center}
+.yui-calendar td.calcell a {color:#003DB8; text-decoration:none}
+.yui-calendar td.calcell.today {border:1px solid #000}
+.yui-calendar td.calcell.oom {cursor:default; color:#999; background-color:#EEE; border:1px solid #E0E0E0}
+.yui-calendar td.calcell.selected {color:#003DB8; background-color:#FFF19F; border:1px solid #FF9900}
+.yui-calendar td.calcell.calcellhover {cursor:pointer; color:#FFF; background-color:#FF9900; border:1px solid #FF9900}
+.yui-calendar td.calcell.calcellhover a {color:#FFF}
+.yui-calendar td.calcell.restricted {text-decoration:line-through}
+.yui-calendar td.calcell.previous {color:#CCC}
+.yui-calendar td.calcell.highlight1 {background-color:#CCFF99}
+.yui-calendar td.calcell.highlight2 {background-color:#99CCFF}
+.yui-calendar td.calcell.highlight3 {background-color:#FFCCCC}
+.yui-calendar td.calcell.highlight4 {background-color:#CCFF99}
+.yui-calendar .calhead {border:1px solid #E0E0E0; vertical-align:middle; background-color:#FFF}
+.yui-calendar .calheader {position:relative; width:100%; text-align:center}
+.yui-calendar .calheader img {border:none}
+.yui-calendar .calweekdaycell {color:#666; font-weight:normal; text-align:center; width:1.5em}
+.yui-calendar .calfoot {background-color:#EEE}
+.yui-calendar .calrowhead, .yui-calendar .calrowfoot {color:#666; font-size:9px; font-style:italic; font-weight:normal; width:15px}
+.yui-calendar .calrowhead {border-right-width:2px}
+.yui-calendar a.calnav {_position:relative; padding-left:2px; padding-right:2px; text-decoration:none; color:#000}
+.yui-calendar a.calnav:hover {border:1px solid #003366; background-color:#6699cc; background: url(calgrad.png) repeat-x; color:#fff; cursor:pointer}
+.yui-calcontainer .yui-cal-nav-mask {position:absolute; z-index:2; display:none; margin:0; padding:0; left:0; top:0; width:100%; height:100%; _width:0; _height:0; background-color:#000; opacity:0.25; *filter:alpha(opacity=25)}
+.yui-calcontainer .yui-cal-nav {position:absolute; z-index:3; display:none; padding:0; top:1.5em; left:50%; width:12em; margin-left:-6em; border:1px solid #7B9EBD; background-color:#F7F9FB; font-size:93%}
+.yui-calcontainer.withtitle .yui-cal-nav {top:3.5em}
+.yui-calcontainer .yui-cal-nav-y, .yui-calcontainer .yui-cal-nav-m, .yui-calcontainer .yui-cal-nav-b {padding:2px 5px 2px 5px}
+.yui-calcontainer .yui-cal-nav-b {text-align:center}
+.yui-calcontainer .yui-cal-nav-e {margin-top:2px; padding:2px; background-color:#EDF5FF; border-top:1px solid black; display:none}
+.yui-calcontainer .yui-cal-nav label {display:block; font-weight:bold}
+.yui-calcontainer .yui-cal-nav-mc {width:100%; _width:auto}
+.yui-calcontainer .yui-cal-nav-y input.yui-invalid {background-color:#FFEE69; border: 1px solid #000}
+.yui-calcontainer .yui-cal-nav-yc {width:3em}
+.yui-calcontainer .yui-cal-nav-b button {font-size:93%; text-decoration:none; cursor: pointer; background-color: #79b2ea; border: 1px solid #003366; border-top-color:#FFF; border-left-color:#FFF; margin:1px}
+.yui-calcontainer .yui-cal-nav-b .yui-default button {}
+.yui-calendar .calbody a:hover {background:inherit;}
+p#clear {clear:left; padding-top:10px;}
+body {font-family: Arial, Verdana, sans-serif; font-size: 93%; width: 100%; margin: 0; padding: 0; line-height: 130%; color: #303030; background-color: #eee; text-align: left}
+h1 {font-size: 2.0em; font-weight: bold; border-bottom: 1px solid #CCC; margin: 0 0 12px 0; padding: 0 0 0.25em 0}
+h2 {font-size: 1.53em; font-weight: bold; border-bottom: 1px solid #CCC; margin: 0 0 10px 0; padding: 0 0 0.25em 0}
+h3 {font-size: 1.26em; font-weight: bold; margin: 0 0 0.25em 0}
+h4 {font-weight: bold; color: #555; margin: 0 0 0.25em 0}
+img {border: none}
+p {margin: 0 0 0.5em}
+em {font-style: italic}
+a, a:visited, a:hover {color: #0957A4; text-decoration: none; font-weight: bold}
+a:hover {text-decoration: underline}
+a, a:visited, a:hover, a:active {outline: none}
+table, tr, td {border-collapse: collapse; padding: 0; margin: 0}
+ul.buttons li {position: relative; float: left; width: auto}
+ul.buttons li {margin: 0 0 0 1px; display: inline}
+a.button {display: block; padding: 0.1em 1.4em; background: url(/images/v3/buttons/button_bg.png) repeat-x left center; color: #FFF; letter-spacing: 0.05em; font-weight: normal; font-size: 13px; text-decoration: none}
+a.button:hover, ul.buttons li a.current {background-image: url(/images/v3/buttons/button_bg_on.png) }
+a.button .top_left, a.button .top_right, a.button .bottom_left, a.button .bottom_right {overflow: hidden; position: absolute; z-index: 5; width: 4px; height: 4px}
+a.button .top_left {top: 0; left: 0; background: url(/images/v3/buttons/corners.png) no-repeat 0 0}
+a.button .top_right {top: 0; right: 0; background: url(/images/v3/buttons/corners.png) no-repeat -4px 0}
+a.button .bottom_left {bottom: 0; left: 0; background: url(/images/v3/buttons/corners.png) no-repeat 0 -4px}
+a.button .bottom_right {bottom: 0; right: 0; background: url(/images/v3/buttons/corners.png) no-repeat -4px -4px}
+a.button:hover .top_left, ul.buttons li a.current .top_left {background-position: 0 -8px}
+a.button:hover .top_right, ul.buttons li a.current .top_right {background-position: -4px -8px}
+a.button:hover .bottom_left, ul.buttons li a.current .bottom_left {background-position: 0px -12px}
+a.button:hover .bottom_right, ul.buttons li a.current .bottom_right {background-position: -4px -12px}
+a.button:active, ul.buttons li a:focus {outline: none}
+#flash {text-align: center; font-weight: bold; margin-bottom: 1.0em}
+.notice {padding: .4em; background: gold; color: black}
+.error_message {font-weight: bold; color: red}
+.error_above_or_below {color: red}
+h1 .right_link {float: right; font-size: 0.5em; font-weight: normal}
+h2 .right_link {float: right; font-size: 0.56em; font-weight: normal}
+h2 .sublink {font-size: 0.56em; font-weight: normal}
+h2 .subtext {font-size: 0.56em; color: #888}
+h2 .subtext + .subtext {margin-left: 1.5em}
+.content {margin: 0 auto; width: 66em}
+.halfway_column {float: left; width: 455px}
+.has_right_spacer {margin-right: 45px}
+.left {float: left}
+.right {float: right}
+.clear {clear: both}
+.bold {font-weight: bold}
+#header {background-color: #88C2E5; font-size: 0.8em; padding: 4px 10px 1px 6px; min-width: 930px}
+#header #projects_button {margin: 3px 5px 3px 1px; margin-left: 0}
+#header .logo_and_projects_area {padding-left: 10px}
+#header .logo_and_projects_area * {vertical-align: middle; float: left}
+#header .logo_and_projects_area img {margin-top: 3px; margin-left: 1px}
+#header .logo_and_projects_area #projects_button {padding-top: 0.1em; margin-right: 7px}
+#header .navigation_area {text-align: right; float: right; width: 49em; line-height: 120%; font-size: 90%}
+#header .navigation span, #header .navigation a {font-size: 1.1em; vertical-align: middle; float: left; width: auto; padding-top: 4px; padding-bottom: 3px}
+#header .navigation a {color: #0957A4; padding-left: 4px; padding-right: 4px}
+#header .navigation span {color: #418ad2; padding-left: 1px; padding-right: 1px}
+#header .navigation a:hover {background-color: #a6d8f7; text-decoration: none}
+#header .navigation > span.current {color: #111; font-weight: bold}
+#header .navigation > span.separator {color: #999}
+#header .welcome_message, #header .nav_links {float: right; width: auto}
+#header .nav_links {clear: right}
+#header .welcome_message {font-weight: bold; color: black; line-height: 1em; margin-right: 3px}
+#header a {color: white}
+#header .relative {position: relative}
+#header .messages .message, #header .messages #status {margin: 0; float: left; font-weight: bold}
+#header .messages .message {float: none; padding: 0.25em 0}
+#header .messages .message .date {color: #AA1224}
+#header .messages #status {left: 415px; position: absolute; top: 3px}
+#header .messages #offlineMessage {background-color: #A70201; border: 1px solid white; color: white; font-weight: bold; left: 50%; margin-left: -100px; position: fixed; right: 33%; text-align: center; top: 3px; width: 200px}
+#header .statusOn, #header .statusFading, #header .statusOff {font-weight: bold; padding-right: 10px}
+#header .statusOn {color: black}
+#header .statusOff {color: white}
+#header .statusFading {}
+#header .statusOff {color: white}
+#main {padding: 35px 0 50px 0; min-height: 470px; background-color: #fff}
+.big_link {display: block; line-height: 2em; font-size: 1.13em}
+a.disabled_big_link {font-weight: bold; color: #888}
+a.disabled_big_link:hover {text-decoration: none; cursor: default}
+.content_section + .content_section {margin-top: 3em}
+.content_subsection + .content_subsection {margin-top: 10px}
+.has_dotted_line {background: url("/images/v3/backgrounds/dotted_horizontal_border.png") repeat-x bottom left}
+html.with_footer body #main{ min-height: 79%; margin:0pt auto -72px; height:auto !important}
+html.with_footer, html.with_footer body{ height: 100%}
+.push {height: 2em}
+#footer {background: url("/images/v3/backgrounds/footer_gradient.png") #EEE repeat-x top left; padding: 30px 0 10px 35px; height: 72px; overflow: hidden; zoom: 1; font-size: 1em}
+#footer .developed_by, #footer .hosted_by, #footer .image, #footer .tracker_podcast, #footer .tracker_twitter {float: right; padding-right: 25px; font-size: 0.64em; margin-top: -10px; letter-spacing: 0.04em}
+#footer .developed_by img, #footer .jolt_award img, #footer .hosted_by img, #footer .tracker_podcast img, #footer .tracker_twitter img {display: block}
+#footer .jolt_award {}
+#footer .tracker_twitter img {padding-left: 15px}
+#footer .jolt_award img {padding-left: 32px}
+#footer .tracker_logo {}
+#footer .footer_links {font-weight: bold}
+#footer .footer_links a {padding-right: 1.5em; font-size: 0.8em}
+.bad_message {border: 3px solid #97C8E5; width: 450px; margin: 200px auto 0 auto; padding: 40px 50px; text-align: center}
+.pagination {margin-top: 2px; text-align: center}
+.pagination .current {font-weight: bold}
+.pagination .disabled {color: #888}
+#from_date, #to_date {display: inline}
+.dateEditField {line-height: 22px; display: inline}
+.dateIconField {display: inline; margin-right:4px}
+.calendar_quick_links {float: right; margin-right: 75px; line-height: 16px}
+.calendar_quick_links a {font-size: 0.9em}
+.sortable .sortcol {cursor: pointer; padding-right: 20px; background-repeat: no-repeat; background-position: right center}
+.sortable .sortasc {background-color: #DDFFAC; background-image: url(/images/v3/icons/up.gif)}
+.sortable .sortdesc {background-color: #B9DDFF; background-image: url(/images/v3/icons/down.gif)}
+.sortable .nosort {cursor: default}
+#alert_box {left: 430px; position: absolute; top: 0.4em; text-align: center; background: white; padding-top: 0.4em; padding-bottom: 0.4em; padding-right: 0.5em; padding-left: 0.25em; font: normal 12px; color: #333; width: 25em; border: 1px solid darkgray; line-height: 1em; z-index: 99}
+#alert_box a, #alert_box a:visited, #alert_box a:hover {color: #0957A4}
+#delinquency_alert_detail, #delinquency_alert_detail a {color: #AA1224}
+#header .messages #alert_box_dismiss {float: right; width: 13px; height: 13px}
+#motd {color: #0957A4; margin-bottom: 0.5em}
+#motd a, #motd a:visited {color: #1D8EC9}
+.timeoutPopup {position: absolute; visibility:hidden; border: 2px solid #8DC8FF; background: #E5E5E5; padding:0}
+.timeoutPopup .messageContainer {text-align: center; padding: 1em}
+.timeoutPopup .okButton{ width: 40px}
+.timeoutPopup .okButtonContainer {text-align: center; padding-bottom: 1em}
+.calendarPopupDiv{ background-color: white}
+.yui-calcontainer .calclose {background: url("/images/v3/icons/common/calx.gif") no-repeat}
+.yui-calendar {font-size: 80%}
+.yui-calendar .calnavleft {background: url("/images/v3/icons/common/callt.gif") no-repeat}
+.yui-calendar .calnavright {background: url("/images/v3/icons/common/calrt.gif") no-repeat}
+.yui-calendar a.calnav:hover {background: url("/images/v3/icons/common/calgrad.png") repeat-x}
+.errorText {color:red; padding:0.4em}
+.errorTextSignin {font-weight: bold; color: darkred}
+a#projects_button {background: url(/images/v3/buttons/header/projects.png) no-repeat; width: 86px; height: 22px}
+a#projects_button:hover {background-image: url(/images/v3/buttons/header/projects_hover.png)}
+a#projects_button.open {background-image: url(/images/v3/buttons/header/projects_open.png)}
+.content .help_page {margin: auto; padding-bottom: 4em}
+.help_page p, .help_page ul, .help_page ol {color: #555; font-size: 0.9em}
+.help_page ol li {list-style-type: decimal; margin-left: 20px}
+.help_page ol li, .help_page ol pre {margin-bottom: .5em}
+.preview .markdown_content ul li ul li, .help_page ul li ul li {margin-left: 1em}
+.help_page ul li ul li a {font-weight: normal}
+.help_page h3 a.anchor {color: #303030; text-decoration: none}
+.help_page h4 a.anchor {color: #555; text-decoration: none}
+.help_page h4 {margin-top: 1em}
+.help_page pre {color: #007000; font-family: monospace; background-color: #FAFAFA; border: 1px solid #CCCCCC; padding-top: 1em; padding-bottom: 0}
+.help_page .example_variable {color: #3366CC; font-weight: bold}
+.api-example {font-size: .82em; color: #252599; font-weight: bold; margin-left: 4px}
+.help_page .content_subsection + .content_subsection {margin-top: 1em}
+.help_page .refined_search li p {font-size: 1em}
+.help_page .refined_search .example {display: block; font-family: monospace; font-size: 1.2em; color: #333399}
+.screencast_callout {display: block; margin: 20px 0; padding: 20px; background: #FFD}
+.screencast_callout h3 {float: right; width: 500px; padding-top: 85px}
+.policy_content li {list-style-position: inside}
+.policy_content ul li {list-style-type: disc; list-style-position: inside; margin-left: 20px}
+.policy_content p {padding-bottom: 10px}
+.eula .policy_content h3, .eula .policy_content h4, .eula .policy_content p, .eula .policy_content li {padding-bottom: 10px}
+.simple-overlay {background: black; opacity: 0.4}
+.new_project_popup {border: 4px solid gray; font-size: 0.9em; padding: 20px; background: transparent url(/images/v3/backgrounds/gray_gradient.png) repeat-x scroll left bottom}
+.new_project_popup label {font-weight: bold; color: #aa1224; font-size: 1.3em}
+.new_project_popup input {margin: 0 5px 0 10px}
+.new_project_popup input.submit, .new_project_popup input.cancel {font-size: 0.9em; margin: 0 2px; vertical-align: middle}
+.new_project_popup .error_message {background: #EEEEEE; margin: 5px 0 0; text-align: center}
+body {min-width: 65em}
+html.with_footer body #main {padding: 7px 0 50px 0; background-color: #fff}
+.form_table {color: #555; margin-bottom: 30px}
+.form_table td.label_column {text-align: right; font-weight: bold; padding: 3px 2em 10px 0; vertical-align: top}
+.form_table td > * {font-size: 0.85em}
+.form_table td.field_column {vertical-align: top; padding: 3px 0 10px 0}
+.form_table td.text_column {vertical-align: top; padding: 3px 0 10px 0}
+.form_table td.link_column {vertical-align: top; padding: 3px 10px 10px 10px}
+.form_table td.field_column .settings_field {width: 15em}
+.form_table td.field_column .error_field input {background-color: #F2AFAF}
+.form_table td.field_column textarea {width: 40em; font-family: Helvetica, sans-serif; border: 1px solid #CCC; padding: 5px}
+.form_table td.button_column {}
+input[type="checkbox"], input[type="text"] {border-width: 1px; border-style: solid; border-color: #888 #C3C3C3 #DDDDDD; padding: 3px 2px 1px 2px; margin-right: 5px}
+input[type="submit"], input[type="button"] {padding: 2px 1px 0px 1px}
+select {margin-right: 5px; padding-top: 1px}
+div#or {position: relative; height: 0.6em; width: 700px; margin-bottom: 30px; border-bottom: 1px solid black}
+div#or span {position: absolute; left: 3em; padding: 0 0.5em; background-color: white}
+.listing_table {width: 100%}
+.listing_table td, .listing_table th {padding: 10px 0px; background: url("/images/v3/backgrounds/dotted_horizontal_border.png") repeat-x bottom left; vertical-align: middle; text-align: left}
+.listing_table th {font-weight: bold}
+.listing_table tr.minilinks td {background: none}
+.listing_table td.name {font-weight: bold; padding-right: 6em}
+.listing_table td.actions > *{ margin-right: 3em}
+.listing_table th.quote {width: 50%}
+.minilinks a {font-weight: normal}
+div.auto_complete {width: 350px; background: #fff; z-index: 99; font-size: 0.8em}
+div.auto_complete ul {border:1px solid #888; margin:0; padding:0; width:100%; list-style-type:none}
+div.auto_complete ul li {margin:0; padding:3px}
+div.auto_complete ul li.selected {background-color: #ffb}
+div.auto_complete ul strong.highlight {color: #800; margin:0; padding:0}
+a.show_more {color: #2DA6EA; font-size: 9pt; padding: 10px 0 0 0; font-weight: bold; display: block}
+.sortable td, .sortable th {padding: 0.5em; border: 1px solid #CCC}
+.sortable thead, .sortable tfoot {background-color: #DDD}
+.sortable tr.rowodd {}
+.sortable tr.roweven {background-color: #F2F2F2}
+.sortable .sortcol {cursor: pointer; padding-right: 20px; background-repeat: no-repeat; background-position: right center}
+.sortable .sortasc {background-color: #DDFFAC; background-image: url(/images/v3/icons/up.gif)}
+.sortable .sortdesc {background-color: #B9DDFF; background-image: url(/images/v3/icons/down.gif)}
+.sortable .nosort {cursor: default}
+.rounded_box, .rounded_box > div, .rounded_box > div > div, .rounded_box > div > div > div {background-image: url(/images/v3/backgrounds/rounded_box.png); background-repeat: no-repeat; height: 100%; zoom: 1}
+.rounded_box {background-position: top right; padding-right: 7px; padding-top: 7px; height: 76px}
+.rounded_box > div {background-position: top left; padding-left: 7px; padding-top: 7px; margin-top: -7px}
+.rounded_box > div > div {background-position: bottom right; padding-bottom: 7px; margin-right: -7px; margin-left: 7px}
+.rounded_box > div > div > div {background-position: bottom left; padding-left: 7px; padding-bottom: 7px; margin-left: -14px; margin-bottom: -7px; width: 100%; *position: relative}
+.rounded_box > div > div > div > .inner {display: table; height: 100%; width: 90%; margin: 0 auto; *position: absolute; *top: 50%; *height: auto}
+.rounded_box p {display: table-cell; vertical-align: middle; *position: relative; *top: -50%; *margin-top: -7px}
+.rounded_box p, .rounded_box p a {color: #FFF; font-size: 16px; line-height: 1.2em; font-weight: bold; text-align: center; margin-bottom: 0}
+.rounded_box p a {text-decoration: underline}
+.rounded_box p a:hover {color: #666}
+.rounded_box p {margin-left: auto; margin-right: auto; width: 320px}
+.preview .markdown_content {background-color: #EEE; padding: 10px 10px 10px 20px}
+.markdown_content h1, .markdown_content h2, .markdown_content h3 {border: 0}
+.markdown_content strong{ font-weight: bold}
+.markdown_content em {font-style: italic}
+.markdown_content li {list-style-type: disc; margin-left: 1.5em}
+#markdown_content_content {width: 800px; height: 20em}
+.timeModule .label {margin-top: .5em; color:#555555; font-size: 0.9em}
+.timeModule #buttons {margin-top: 1em}
+.timeModule #shift_list {border-top:1px solid #CCCCCC; margin-top: 2em; padding-top: 1em}
+.stint_title {font-size: 15pt}
+.delinquent_stint {width: 300px; float: left; font-style: italic}
+.stint_details {border: 1px solid black; width: 400px; float: left}
+.stints_meta {padding-top: 5px; font-size: 10pt; color: #444444}
+.delinquent_list {background-color: #A0C1D6; margin: 5px}
+.stints_table {border: 1px solid gray; padding: 3px}
+.stints_table td, .stints_table th {text-align: center; border: 1px solid lightgray}
+.stints_table .stint_title_cell {width: 150px; text-align: left}
+.stints_table .missing_day {color: red; font-weight: bold}
+.stints_table .suspicious_day {color: darkorange; font-weight: bold}
+.stints_table .up_to_date_day {}
+.stint_title_up_to_date {}
+.stint_title_delinquent {font-weight: bold; color: red}
+.stint_title_delinquent a {font-weight: bold; color: red}
+.stint_title_delinquent a:hover {color: red}
+.stint_title_delinquent a:visited {color: red}
+.stint_title_delinquent a:link {color: red}
+.delinquency_chart {width: 350px; height: 100px; float: right; margin-top: -20px; margin-bottom: 2px; margin-right: 10px}
+.time_search_options td{ vertical-align: top}
+.time_search_options td.options{ padding: 5px}
+.time_search_options td.options input[type="checkbox"] {margin-right:0; padding-bottom: 0; vertical-align: middle}
+.time_search_options td.options label{ vertical-align: middle; padding-bottom: 0}
+.holiday_table_list td {padding: 5px 15px 5px 10px; border-bottom: 1px solid #B7C1C6}
+#shift_table {padding: 12px; margin-top: 12px; width: 100%}
+#shift_table th {text-transform: uppercase; text-align: left; background-image: url(/images/v3/backgrounds/settings_background.gif); background-repeat: repeat; font-weight: bold}
+#shift_table tr {background-color: white}
+#shift_table tr.dark {background-color: #c9d5e5 }
+#shift_table td, #shift_table th {padding: 3px; border: 1px solid black}
+#shift_table td.hours {text-align: right; font-weight: bold}
+#shift_table td.total {background-color: lightsalmon}
+#shift_table td.subtotal {background-color: cornflowerblue}
+#shift_table td.empty {border: none; background-image: url(/images/v3/backgrounds/settings_background.gif); background-repeat: repeat}
+textarea#snippets {height: 20em; width: 96%; border: none; padding: 1em .5em .5em 1.8em; background-color: lightgrey}
+.snippets_controls {margin-bottom: 1em}
+.dashboard_page {margin-top: 2em; width: 68em}
+.dashboard_page h2 {background: transparent url(/images/v3/backgrounds/dotted_horizontal_border.png) repeat-x scroll left bottom; border-bottom: none; padding-bottom: 0.5em; margin-bottom: 20px}
+.dashboard_page .left_column {width: 30em}
+.dashboard_page .right_column {float:right; width: 55%}
+.dashboard_page #maintenance_message {margin-bottom: 10px; color: red}
+.dashboard_page .pagination {font-size: 10px; line-height: 1em}
+.dashboard_page .pagination{ position: relative; height: 14px; width: 40px}
+.dashboard_page .pagination a, .dashboard_page .pagination span {display: none}
+.dashboard_page .pagination {display: block; width: 100px; float: right}
+.dashboard_page .pagination a {text-decoration: none}
+.dashboard_page .pagination > .prev_page, .dashboard_page .pagination > .next_page {display: block; width: 14px; height: 14px; position: absolute; text-indent: -9999em}
+.dashboard_page .pagination > .prev_page {background: url(/images/v3/buttons/pagination/left_arrow.png) no-repeat; right: 15px}
+.dashboard_page .pagination > a.prev_page:hover {background: url(/images/v3/buttons/pagination/left_arrow_on.png) no-repeat}
+.dashboard_page .pagination > .next_page {background: url(/images/v3/buttons/pagination/right_arrow.png) no-repeat; right: 0px}
+.dashboard_page .pagination > a.next_page:hover {background: url(/images/v3/buttons/pagination/right_arrow_on.png) no-repeat}
+.dashboard_page .pagination .disabled {opacity: 0.4}
+.dashboard_page .pagination > span.disabled.prev_page + .current, .dashboard_page .pagination > a.prev_page + a[rel$='start'] {display: block; width: 14px; height: 14px; right: 31px; position: absolute; text-indent: -9999em; background: url(/images/v3/buttons/pagination/first.png) no-repeat}
+.dashboard_page .pagination > span.disabled.prev_page + .current {opacity: 0.4}
+.dashboard_page .pagination > a.prev_page + a[rel$='start']:hover {background-image: url(/images/v3/buttons/pagination/first_on.png)}
+.dashboard_page .activity_feed_items {margin-top: -8px}
+.dashboard_page #activity_feed .activity_feed_item {font-family: Arial; font-size: 8pt; letter-spacing: -0em; background: transparent url(/images/v3/backgrounds/dotted_horizontal_border.png) repeat-x scroll left top; padding-top: 8px; margin: 0 0 8px; overflow: hidden; line-height: 100%; position: relative}
+.dashboard_page #activity_feed .activity_feed_item:first-child {background: none}
+.dashboard_page #activity_feed .activity_feed_item .bar {background-color: #88C2E5; width: 10px; height: 150px; position: absolute; top: 8px; left: 0}
+.dashboard_page #activity_feed .activity_feed_item .story_blurb {color: #333333; line-height: 130%; font-size: 13px; margin-top: 3px}
+.dashboard_page #activity_feed .activity_feed_subscribe a{ color: gray}
+.dashboard_page #activity_feed .activity_feed_subscribe{ position: absolute; bottom: 0px; right: 8px; clear: right; font-family: Arial; font-size: 12px; color: gray}
+.dashboard_page #activity_feed .activity_feed_subscribe_link {margin-right: 3px; position: relative; top: -3px}
+.dashboard_page #activity_feed .activity_feed_item .story_name {font-weight: bold; margin-top: 2px; font-size: 12px}
+.dashboard_page #activity_feed .activity_feed_item .metadata {position: relative; float: right; text-align: right; width: 160px}
+.dashboard_page .activity_occurred_at {color: #bbbbbb; font-style: italic; font-size: .9em; vertical-align: top; line-height: 19px; margin-right: 5px}
+.dashboard_page .activity_feed_item .activity_feed_description {margin-right: 115px; margin-left: 20px}
+.dashboard_page .activity_feed_item .project_name {color: darkgray; font-weight: bold; overflow: hidden; margin-top: 2px; font-size: 12px; line-height: 1.2em}
+.dashboard_page .activity_feed_item > .metadata > .topline {width: 100%}
+.dashboard_page a.show_all {font-size: 0.8em; position: relative; top: -14px; color: #999}
+.dashboard_page a.show_all:hover {color: #0957A4; text-decoration: none}
+.dashboard_page #my_projects .pagination {position: relative; top: -10px}
+.dashboard_page #my_projects > span.inner {display: block; margin-right: 10%}
+.dashboard_page #my_projects .right_link {position: relative; top: -12px}
+.dashboard_page div.project_box {color: #333; font-weight: bold; display: block; height: 90px; position: relative; text-align: center; border: 1px solid #ccc; margin-bottom: 20px; background: url("/images/v3/backgrounds/gray_gradient.png") repeat-x bottom left}
+.dashboard_page div.project_box:hover {text-decoration: none; background: url("/images/v3/backgrounds/blue_gradient.png") repeat-x bottom left; color: #FFF; cursor: pointer}
+.dashboard_page div.project_box:hover .project_title {color: #FFF; font-weight: normal}
+.dashboard_page div.project_box .project_title {position: absolute; font-size: .9em; top: 35px; left: 22px; color: #000}
+.dashboard_page div.project_box .project_box_hover_links {position: absolute; left: 22px; bottom: 0px; font-size: 0.8em}
+.dashboard_page div.project_box:hover .project_box_hover_links .hover_link {margin-right: 7px; font-weight: normal; color: #666; display: inline}
+.dashboard_page div.project_box:hover .project_box_hover_links .hover_link:hover {text-decoration: underline; cursor:pointer}
+.dashboard_page div.project_box .project_box_hover_links .hover_link {margin-right: 5px; display: none}
+.dashboard_page div.project_box .project_box_hover_links {position: absolute; top: 51px; left: 22px}
+.dashboard_page div.project_box .velocity_box {padding-top: 18px; padding-left: 210px; position: relative}
+.dashboard_page div.project_box .velocity_box .caption {font-size: .75em; color: #999}
+.dashboard_page div.project_box .velocity_box .velocity {font-size: .8em; color: #bbb; position: absolute; top: 2px; right: 6px}
+.dashboard_page div.project_box:hover .velocity_box .velocity {color:#88c2e5}
+.dashboard_page #create_new_project_button {margin-top: 6px; display: block}
+.dashboard_page .show_all_projects {margin-top: -1.2em; margin-bottom: 1em; text-align: right; color: gray}
+.dashboard_page .news {margin-top: 2em}
+.dashboard_page .messages li {margin-left: 1.5em; padding-bottom: 0.5em; list-style-position:outside; list-style-image: url(/images/v3/icons/red_dot.png)}
+.dashboard_page .messages li ul li {list-style-image: url(/images/v3/icons/small_red_dot.png) !important; padding-top: 0.5em; margin-left: 1em !important}
+.dashboard_page .markdown_content {color: #333333; font-size: 0.9em}
+.dashboard_page .markdown_content h1, .dashboard_page .markdown_content h2, .dashboard_page .markdown_content h3 {color: black}
+.project_overview_page .velocity .heading {position: relative; top: -33px; padding-left: 25px; font-size: 1.3em; font-weight: bold; color: #bbb}
+.project_overview_page .velocity .heading .number {padding-right: .2em; color: #333}
+.admin_testimonials_page .listing_table td {padding: 10px}
+.admin_plans_page .listing_table {font-size: 0.93em}
+.admin_signups_page .sortable tr.roweven{ background-color: transparent}
+.admin_signups_page .sortable td, .sortable th {border:none}
+.listing_table.admin td {width:20em}
+.report_item {margin-bottom: 1em; line-height: 0.2em}
+.report_item h3, .report_item p {margin: 0; padding: 0}
+.report_item p {font-size: 0.8em; color: #888}
+.progress_report_page .form_table {margin-bottom: 10px; margin-top: 10px}
+.progress_report_page .form_table td {padding-bottom: 0}
+.progress_report_page .display_options_cell {background-color: #EEE; margin-right: 20px; width: 200px; height: 18em; padding: 10px; float: left; position: relative; font-size: 0.93em; color: #555}
+.progress_report_page .display_options_cell > h4 {border-bottom: 1px solid #CCC; margin-bottom: 10px}
+.progress_report_page .display_options_cell table td.name {text-align: right; width: 7.5em; padding-right: 1.5em}
+.progress_report_page .display_options_cell .links {position: absolute; bottom: 10px; left: 10px}
+.progress_report_page .display_options_cell .links a {margin-right: 2em; font-weight: normal}
+.progress_report_page .progress_date_range {float: right; background: #EEE; font-weight: bold; color: #AA1224; padding: 10px}
+.progress_report_page .progress_story {padding: 10px 0; color: #555}
+.progress_report_page .progress_story td.progress_command_date {padding: 5px 20px 5px 40px}
+.progress_report_page .progress_story_icon {margin-right: 0.5em}
+.shifts_report_page .delinquency_chart {width: 350px; height: 100px; float: right; margin-bottom: 2px; margin-right: 10px}
+.shifts_report_page table.stints_table {font-size: 0.7em; border: 1px solid gray; padding: 3px}
+.shifts_report_page table.stints_table td, .shifts_report_page table.stints_table th {text-align: center; border: 1px solid lightgray}
+.shifts_report_page table.stints_table .stint_title_cell {width: 150px; text-align: left}
+.shifts_report_page table.stints_table .missing_day {color: red; font-weight: bold}
+.shifts_report_page table.stints_table .suspicious_day {color: darkorange; font-weight: bold}
+.shifts_report_page table.stints_table .up_to_date_day {}
+.shifts_report_page .delinquent_list {background-color: #A0C1D6}
+.shifts_report_page .delinquent_stint {font-style: italic}
+.conversations {max-width: 455px}
+.conversations .top {background: url("/images/v3/backgrounds/conversations_top.png") no-repeat; height: 10px; padding: 27px 20px; font-size: 105%; color: #0957A4; padding: 27px 20px; font-weight: bold}
+.conversations .middle {background: url("/images/v3/backgrounds/conversations_middle.png") repeat-y; font-size: 85%}
+.conversations .bottom {background: url("/images/v3/backgrounds/conversations_bottom.png") no-repeat; height: 19px; margin-left: 1px}
+.conversations #gsfn_list_widget {padding: 3px 25px}
+.conversations #gsfn_list_widget .time {margin-left: 0.8em; color: #555; font-style: italic}
+#gsfn_list_widget .gsfn_topic_list {font-size: 0.9em}
+#gsfn_list_widget ul {margin-top: 0}
+#gsfn_list_widget ul li {line-height: 155%}
+.help_page ol li {list }
+a#fdbk_tab {background-image: url(/images/v3/buttons/feedback_tab.png) !important; height: 115px !important; margin-right: -6px !important; background-color: #FFF !important; z-index: 0 !important}
+a#fdbk_tab:hover {background-position: right top !important; background-color: #FFF !important; width: 36px !important; margin: 0px !important}
+.help_page .api h2 {margin-top: 2em}
+.help_page #api_curl_command {white-space: nowrap; overflow-x: auto; overflow-y: hidden; height: 4em; width: 98%; border: 1px solid; padding: 5px; background-color: #CCCCCC}
+.help_page #api_results {overflow-x: auto; overflow-y: auto; white-space: nowrap; height: 50em; width: 98%; border: 1px solid; padding: 5px; background-color: #CCCCCC}
+.help_page ul li ul li {display: inline}
+.members_page .listing_table {font-size: 0.93em}
+.members_page .listing_table td.name, .members_page .listing_table th.name {padding-left: 33px}
+.action_area {background-color: #EAF5FB; padding: 20px 33px 20px 33px; color: #555}
+.action_area input, .action_area select {font-size: 0.8em}
+.action_area .text_example {font-style: oblique; font-size: 0.8em; color: #888}
+.action_area label {font-weight: bold; font-size: 0.93em; display: block; margin-top: 2px}
+.action_area p {font-size: 0.93em}
+.action_area .action_cells td {padding: 0 10px 0 0; vertical-align: middle}
+h2 + .action_area {margin-top: -10px}
+.action_area_form .form_table td {padding-bottom: 5px}
+.action_area_form .form_table td.label_column {padding-right: 5px; width: 100px}
+.projects_page td.sublink_column span {font-weight: normal; color: #888; font-size: 0.93em}
+.project_overview_page .listing_table td {padding: 5px; font-size: 0.86em; color: #555}
+.project_labels_page .listing_table {font-size: 0.93em}
+.project_labels_page .listing_table td.name, .project_labels_page .listing_table th.name {padding-left: 33px}
+.project_labels_page .listing_table td.story_count > img {vertical-align: middle; margin-right: 0.2em}
+.project_labels_page .listing_table td.story_count > span {margin-right: 1em; color: #888}
+.projects_page h1 {font-size: 1.6em; border-bottom: none; margin-top: 25px; margin-bottom: 25px}
+.projects_page h2 {font-size: 1.3em; border-bottom: 1px solid #999; margin-bottom: 0px; padding-bottom: 8px}
+.projects_page p {margin-top: 20px; margin-left: 33px}
+.projects_page h2 .sublink {margin-left: 4px; font-size: .7em}
+.projects_page .projects_list h2 {margin-top: 30px; font-size: 1.6em}
+.projects_page .projects_list h2 .sublink {font-size: .5em}
+.projects_page h2 div.right_link a {position: relative; top: -10px}
+.projects_page .listing_table {font-size: 0.93em}
+.projects_page .listing_table td.action_links {text-align: right}
+.projects_page .listing_table td.project_column a.project_name {font-weight: bold; color: black; font-size: 1.1em; text-transform: uppercase}
+.projects_page .listing_table td.project_column .links span, .projects_page .listing_table td.project_column .links a {color: #ccc; margin-right: 20px; font-size: .9em; font-weight: normal}
+.projects_page .listing_table td.project_column .links a {color: #88c2e5}
+.projects_page .listing_table td.action_links a, .projects_page .listing_table td.action_links span {color: #ccc; font-size: 0.9em; margin-right: 25px; font-weight: bold}
+.projects_page .listing_table td.action_links a {color: #0957A4}
+.projects_page .listing_table td.project_column {padding: 26px 0}
+.projects_page .listing_table td.project_column, .projects_page .listing_table th.project_column {padding-left: 25px; width: 450px}
+.projects_page .listing_table td.project_column a:hover {background-color: #4161A4; text-decoration: none; color: white}
+.projects_page .center {text-align: center; margin-bottom: 2em}
+#graph {margin: 0 auto; height: 600px; width: 800px}
+.pipeline_label_list {width: 50% }
+.pipeline_note {margin-top: .75em}
+.note_text {border-left: 2px solid #BDE0EE; padding-left: 5px}
+#psa_comment_bar {float: right; width: 400px; margin-top: 1.4em}
+.submission_box textarea {width: 20em}
+.form_table td.field_column textarea {width: 30em}
+.settings .form_table td.label_column {width: 300px}
+.settings .content_section {margin-top: 0em}
+.settings .button_column {padding-top: 1em}
+.settings input[type="checkbox"] {vertical-align: text-top}

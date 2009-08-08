@@ -14,6 +14,14 @@ describe Story do
         comma,separated,labels
       ===============
 
+      name
+        This is another story
+      description
+        Some description
+      labels
+        comma,separated,labels
+      ===============
+
       EOS
       @story = Story.slurp(current_document).first
       ActiveResource::HttpMock.respond_to do |mock|
@@ -25,25 +33,7 @@ describe Story do
       end
       command = SaveAndSlurpCommand.new("some_file.stories", current_document)
       command.save
-      command.tooltip_output.should == "1 created. 0 updated."
-    end
-    
-    it "should update with PT any existing stories by their name" do
-      pending
-    end
-    
-    def create_story
-      current_document = <<-EOS.gsub(/^      /, '')
-      name
-        This is a story
-      description
-        Some description
-      labels
-        comma,separated,labels
-      ===============
-
-      EOS
-      Story.slurp(current_document).first
+      command.tooltip_output.should == "2 created. 0 updated."
     end
   end
 end

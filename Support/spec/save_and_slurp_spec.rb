@@ -9,20 +9,28 @@ describe Story do
       @command = SaveAndSlurpCommand.new("full_story.txt", 
         File.dirname(__FILE__) + "/fixtures", 
         File.read(File.dirname(__FILE__) + "/fixtures/full_story.txt"))
-    end
-    it "should load and save stories" do
+
       @story = @command.stories.first
       ActiveResource::HttpMock.respond_to do |mock|
         mock.post "/services/v2/projects/1234/stories.xml", {"X-TrackerToken" => "975ff69df5eead"}, 
           @story.to_xml, 201, "Location" => "/services/v2/projects/1234/stories/789.xml"
-        # mock.get    "/people/1.xml", {}, @matz
-        # mock.put    "/people/1.xml", {}, nil, 204
-        # mock.delete "/people/1.xml", {}, nil, 200
       end
       @command.save
-      @command.tooltip_output.should == "1 created. 0 updated."
     end
-    it "should upload to PT new stories to PT" do
+    
+    it "should create stories" do
+      @command.results[:created].should == 1
+    end
+    
+    it "should not update any stories" do
+      @command.results[:updated].should be_nil
+    end
+    
+    it "should not have any errors" do
+      @command.results[:errors].should be_nil
+    end
+    
+    it "should show interesting tooltip" do
       current_document = <<-EOS.gsub(/^      /, '')
       name
         This is a story

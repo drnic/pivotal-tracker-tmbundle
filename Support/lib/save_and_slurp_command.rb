@@ -1,7 +1,7 @@
 require "story_parser"
 
 class SaveAndSlurpCommand
-  attr_reader :story_parser
+  attr_reader :story_parser, :results
   
   def initialize(file_path, project_path, document)
     Story.story_defaults(project_path)

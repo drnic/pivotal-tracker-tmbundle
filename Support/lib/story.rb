@@ -14,11 +14,6 @@ rescue LoadError => e
 end
 
 class Story < ActiveResource::Base
-
-  # TODO - pop up a dialog to collect project PT details + store in story_defaults.yml file
-  @@defaults = {"token" => "some_token"} #YAML.load_file('story_defaults.yml')
-  self.site = "http://www.pivotaltracker.com/services/v2/projects/123456"
-  headers['X-TrackerToken'] = @@defaults.delete("token")
   attr_accessor :story_lines
 
   def self.slurp(document)
@@ -38,7 +33,7 @@ class Story < ActiveResource::Base
   def initialize(attributes = {})
     @attributes     = {}
     @prefix_options = {}
-    load(@@defaults.merge(attributes))
+    load(self.class.story_defaults.merge(attributes))
   end
 
   def parse(story_lines)
@@ -77,6 +72,25 @@ class Story < ActiveResource::Base
   end
   
   private
+  
+  def self.story_defaults
+    unless @defaults
+      # TODO - pop up a dialog to collect project PT details + store in story_defaults.yml file
+      begin
+        @defaults = YAML.load_file('story_defaults.yml')
+        self.site = "http://www.pivotaltracker.com/services/v2/projects/#{@defaults["project_id"]}"
+        headers['X-TrackerToken'] = @defaults.delete("token")
+      rescue Exception => e
+        @defaults = {}
+      end
+      
+    end
+    @defaults 
+  end
+  
+  def self.reset_defaults
+    @defaults = nil
+  end
 
   def find_name
     @story_lines.each_with_index do |line, i|

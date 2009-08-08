@@ -9,7 +9,7 @@ describe Story do
     story.parse([""]).should == story
   end
 
-  context "that has values for all attributes" do
+  describe "that has values for all attributes" do
     before do
       story_lines = IO.readlines(File.dirname(__FILE__) + "/fixtures/full_story.txt")
       @story = Story.new.parse(story_lines)
@@ -49,7 +49,7 @@ describe Story do
     end
   end
 
-  context "with only some values" do
+  describe "with only some values" do
     before do
       story_lines = IO.readlines(File.dirname(__FILE__) + "/fixtures/name_only.txt")
       @story = Story.new.parse(story_lines)
@@ -64,7 +64,7 @@ describe Story do
     end
   end
 
-  context "with emtpy attributes" do
+  describe "with emtpy attributes" do
     before do
       story_lines = IO.readlines(File.dirname(__FILE__) + "/fixtures/empty_attributes.txt")
       @story = Story.new.parse(story_lines)
@@ -72,6 +72,51 @@ describe Story do
 
     it "should set the description to a blank string" do
       @story.description.should == ""
+    end
+  end
+  
+  describe "story_defaults" do
+    describe "when already available" do
+      before(:each) do
+        FileUtils.chdir File.dirname(__FILE__) + "/fixtures" do
+          Story.reset_defaults
+          @defaults = Story.story_defaults
+        end
+      end
+      it "should load and populate" do
+        @defaults.should_not be_nil
+      end
+
+      it "should have project_id" do
+        @defaults["project_id"].should == 1234
+      end
+
+      it "should have token" do
+        Story.headers['X-TrackerToken'].should == "975ff69df5eead"
+      end
+
+      it "could have default requested_by" do
+        @defaults["requested_by"].should == "Dr Nic"
+      end
+
+      it "could have default labels" do
+        @defaults["labels"].should == "slurper_default"
+      end
+
+      it "could have default name" do
+        @defaults["name"].should == "Untitled"
+      end
+
+      it "could have default description" do
+        @defaults["description"].should == "In order to \nAs a \nI want \n\nAcceptance:\n* "
+      end
+    
+      it "should have site url" do
+        Story.site.to_s.should == "http://www.pivotaltracker.com/services/v2/projects/1234"
+      end
+    end
+    describe "unavailable" do
+      
     end
   end
 end

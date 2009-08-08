@@ -1,0 +1,39 @@
+name
+	Profit
+description
+	In order to become wealthy
+	As a stakeholder
+	I want the complex things to happen quickly and cheaply
+
+	Acceptance:
+	* do the thing
+	* don't forget the other thing
+	* remember something else
+labels
+	money,power,fame
+==================
+name
+	Eat more manatee
+description
+	In order to become reviled
+	As a hungry person
+	I want to popularize my consumption of manatee
+
+	Acceptance:
+	* tasty manatee eaten by me
+	* manatee numbers decline
+==================
+name
+	Feed the baby
+description
+==============
+name
+	Do some laundry
+description
+	Boring
+labels
+	chores
+=========
+name
+	Do some homework
+=============

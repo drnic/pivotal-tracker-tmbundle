@@ -22,6 +22,7 @@ class StoryParser
     else
       default_fields
     end
+
     ERB.new(snippet_erb_template, nil, '-').result(story.instance_eval { binding })
   end
   

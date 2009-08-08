@@ -1,0 +1,13 @@
+name
+	Profit
+description
+	In order to become wealthy
+	As a stakeholder
+	I want the complex things to happen quickly and cheaply
+
+	Acceptance:
+	* do the thing
+	* don't forget the other thing
+	* remember something else
+labels
+	money,power,fame

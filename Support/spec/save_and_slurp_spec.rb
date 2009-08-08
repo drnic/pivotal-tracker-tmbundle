@@ -17,7 +17,7 @@ describe Story do
       EOS
       @story = Story.slurp(current_document).first
       ActiveResource::HttpMock.respond_to do |mock|
-        mock.post "/services/v2/projects/123456/stories.xml", {"X-TrackerToken"=>nil}, @story.to_xml, 201,
+        mock.post "/services/v2/projects/123456/stories.xml", {"X-TrackerToken" => "some_token"}, @story.to_xml, 201,
           "Location" => "/services/v2/projects/123456/stories/789.xml"
         # mock.get    "/people/1.xml", {}, @matz
         # mock.put    "/people/1.xml", {}, nil, 204

@@ -12,7 +12,7 @@ describe StoryParser do
       	In order to ${10:...}
       	As a ${11:role}
       	I want ${12:${1/.*-\s(.*)$/to \\l$1/}}
-
+      
       	Acceptance:
       	* ${20:do the thing
       	* don't forget the other thing}
@@ -33,7 +33,7 @@ describe StoryParser do
       	In order to ${10:...}
       	As a ${11:role}
       	I want ${12:${1/.*-\s(.*)$/to \\l$1/}}
-
+      
       	Acceptance:
       	* ${20:do the thing
       	* don't forget the other thing}
@@ -53,7 +53,7 @@ describe StoryParser do
         In order to achieve a goal
         As a specific person
         I want feature
-
+      
         Acceptance:
         * do the thing
         * don't forget the other thing

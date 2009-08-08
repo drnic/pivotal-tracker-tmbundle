@@ -15,7 +15,8 @@ end
 
 class Story < ActiveResource::Base
 
-  @@defaults = {} #YAML.load_file('story_defaults.yml')
+  # TODO - pop up a dialog to collect project PT details + store in story_defaults.yml file
+  @@defaults = {"token" => "some_token"} #YAML.load_file('story_defaults.yml')
   self.site = "http://www.pivotaltracker.com/services/v2/projects/123456"
   headers['X-TrackerToken'] = @@defaults.delete("token")
   attr_accessor :story_lines
@@ -47,8 +48,14 @@ class Story < ActiveResource::Base
       @attributes["biz_value"] = find_biz_value
       @attributes["role"] = find_role
       @attributes["feature"] = find_feature
+      @attributes["description"].gsub!("\n\n", "\n")
+    else
+      @attributes["description"] = "In order to \nAs a \nI want \n\nAcceptance:\n* "
+      @attributes["biz_value"] = "..."
+      @attributes["role"] = "role"
+      @attributes["feature"] = "feature"
     end
-    @attributes["labels"] = find_labels
+    @attributes["labels"] = find_labels || "slurper"
     self
   end
   
@@ -82,9 +89,9 @@ class Story < ActiveResource::Base
       if start_of_attribute?(line, 'description')
         desc = Array.new
         while((next_line = @story_lines[i+=1]) && starts_with_whitespace?(next_line)) do
-          desc << next_line
+          desc << next_line.gsub("\t", "")
         end
-        return desc.join("\n").gsub("\t", "")
+        return desc.join("\n")
       end
     end
     nil

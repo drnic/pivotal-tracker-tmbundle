@@ -88,6 +88,10 @@ class Story < ActiveResource::Base
     @defaults 
   end
   
+  def self.has_story_defaults?
+    !@defaults.empty?
+  end
+  
   def self.reset_defaults
     @defaults = nil
   end

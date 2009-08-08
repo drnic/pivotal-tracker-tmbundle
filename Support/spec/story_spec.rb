@@ -114,9 +114,25 @@ describe Story do
       it "should have site url" do
         Story.site.to_s.should == "http://www.pivotaltracker.com/services/v2/projects/1234"
       end
+
+      it "should inform that story_defaults.yml is available" do
+        Story.has_story_defaults?.should be_true
+      end
     end
     describe "unavailable" do
-      
+      before(:each) do
+        Story.reset_defaults
+        Story.story_defaults
+      end
+      it "should inform that no story_defaults.yml is available" do
+        Story.has_story_defaults?.should be_false
+      end
+
+      # TODO - move this to the slurper command
+      it "should create a story_defaults.yml in the project" do
+        # ask "Should I create a story_defaults.yml in /path/to/story_defaults.yml?"
+        # then do nothing
+      end
     end
   end
 end

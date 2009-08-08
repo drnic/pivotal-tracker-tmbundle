@@ -5,9 +5,9 @@ require "story"
 class StoryParser
   attr_reader :document, :stories
   
-  def initialize(file_name, document = "")
-    if @file_name         = file_name
-      @default_label      = file_name.split(".").first
+  def initialize(file_path, document = "")
+    if file_path && @file_name = File.basename(file_path)
+      @default_label      = @file_name.split(".").first
       @default_story_name = @default_label.humanize
     else
       @default_label      = 'comma,separated,labels'

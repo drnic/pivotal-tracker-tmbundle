@@ -73,17 +73,16 @@ class Story < ActiveResource::Base
   
   private
   
-  def self.story_defaults
+  def self.story_defaults(project_path = `pwd`)
     unless @defaults
       # TODO - pop up a dialog to collect project PT details + store in story_defaults.yml file
       begin
-        @defaults = YAML.load_file('story_defaults.yml')
+        @defaults = YAML.load_file(File.join(project_path, 'story_defaults.yml'))
         self.site = "http://www.pivotaltracker.com/services/v2/projects/#{@defaults["project_id"]}"
         headers['X-TrackerToken'] = @defaults.delete("token")
       rescue Exception => e
         @defaults = {}
       end
-      
     end
     @defaults 
   end

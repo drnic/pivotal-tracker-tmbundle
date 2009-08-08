@@ -1,15 +1,16 @@
 require "story_parser"
 
 class SaveAndSlurpCommand
-  attr_reader :stories
+  attr_reader :story_parser
   
-  def initialize(file_name, document = "")
-    @stories = StoryParser.new(file_name, document)
+  def initialize(file_path, project_path, document)
+    Story.story_defaults(project_path)
+    @story_parser = StoryParser.new(file_path, document)
   end
   
   def save
     @results = {}
-    @stories.stories.each do |story|
+    stories.each do |story|
       # story - see if it already exists by name
       if story.save
         # TODO - :created vs :updated
@@ -22,6 +23,10 @@ class SaveAndSlurpCommand
     end
   end
   
+  def stories
+    story_parser.stories
+  end
+  
   def tooltip_output
     output = "#{@results[:created] || 0} created. #{@results[:updated] || 0} updated."
     output += " #{@results[:errors]}  errors." if @results[:errors]
@@ -30,7 +35,7 @@ class SaveAndSlurpCommand
 end
 
 if __FILE__ == $PROGRAM_NAME
-  command = SaveAndSlurpCommand.new(ENV['TM_FILENAME'], STDIN.read)
+  command = SaveAndSlurpCommand.new(ENV['TM_FILENAME'], ENV['TM_PROJECT_DIRECTORY'], STDIN.read)
   command.save
   print command.tooltip_output
 end

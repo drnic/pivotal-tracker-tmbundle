@@ -78,10 +78,8 @@ describe Story do
   describe "story_defaults" do
     describe "when already available" do
       before(:each) do
-        FileUtils.chdir File.dirname(__FILE__) + "/fixtures" do
-          Story.reset_defaults
-          @defaults = Story.story_defaults
-        end
+        Story.reset_defaults
+        @defaults = Story.story_defaults(File.dirname(__FILE__) + "/fixtures")
       end
       it "should load and populate" do
         @defaults.should_not be_nil
